@@ -11,9 +11,9 @@
       - [X] Header
       - [X] Footer
       - [X] Button 
-      - [] Badge
-      - [] Input
-      - [] Checkbox
+      - [X] Badge
+      - [X] Input
+      - [X] Checkbox
       - [] Stepper
       - [] OptionCard
       - [] PlanCard

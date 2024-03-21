@@ -1,0 +1,10 @@
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:checked {
+        accent-color: var(--grey-100);
+    }
+}
