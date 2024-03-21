@@ -2,6 +2,10 @@
 
 ## Librerias usadas
 
+- [react-hook-form](https://www.npmjs.com/package/react-hook-form)
+      
+      Se utiliza para realizar el manejo del formulario y su validación
+
 - [sass](https://www.npmjs.com/package/sass)
 
       Se utiliza para realizar uso del procesador sass, que nos ayudará con el nesting y uso de mixins
