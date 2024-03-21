@@ -29,7 +29,7 @@
   - [x] PlanCard
   - [x] ButtonBack
 - [] Diseñar las vistas
-  - [] Vista Datos
+  - [X] Vista Datos
   - [] Vista Planes y Coberturas
   - [] Vista Resumen
 

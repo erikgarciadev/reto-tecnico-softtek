@@ -1,0 +1,139 @@
+@import "../../_mixins.scss";
+
+.container-home {
+    min-height: calc(100vh - 152px);
+    background-color: #f8f9ff;
+    padding: 3.5em 1em;
+    position: relative;
+    z-index: 10;
+
+    @include breakpoint-small {
+        min-height: calc(100vh - 106px);
+        padding: 5em 1em 3em 1em;
+    }
+
+    &__content {
+        display: flex;
+        gap: 5em;
+        justify-content: center;
+
+        picture {
+            display: none;
+            @include breakpoint-large {
+                display: block;
+            }
+
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.blur-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.blur-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+}
+
+.form {
+    color: var(--grey-100);
+
+    .error {
+        color: red;
+        font-size: 14px;
+    }
+    .container-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: var(--grey-100);
+        }
+    }
+
+    .container-checkbox-error {
+        padding: 0.5em 0;
+    }
+
+    &__container_title {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--grey-30);
+        padding-bottom: 1em;
+        gap: 1em;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            color: var(--grey-100);
+        }
+
+        picture {
+            display: block;
+            @include breakpoint-large {
+                display: none;
+            }
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    &__instructions {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: var(--grey-100);
+        padding: 2em 0;
+        text-wrap: balance;
+    }
+
+    &__terms {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: var(--grey-100);
+        text-decoration: underline;
+        padding: 1em 0 3em 0;
+    }
+}
+
+.form-container-input {
+    padding: 1em 0;
+}
+
+.input-select {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid var(--grey-60);
+
+    select {
+        width: 140px;
+        border: none;
+        padding: 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        outline: none;
+        border-left: 0px;
+        border-right: 1px solid var(--grey-60);
+        background-color: transparent;
+    }
+}
