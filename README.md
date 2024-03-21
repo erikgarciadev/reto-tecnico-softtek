@@ -8,9 +8,9 @@
 
 ## Tareas realizadas
    - [] Realizar componentes
-      - [] Header
-      - [] Footer
-      - [] Button 
+      - [X] Header
+      - [X] Footer
+      - [X] Button 
       - [] Badge
       - [] Input
       - [] Checkbox

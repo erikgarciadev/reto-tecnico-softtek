@@ -1,9 +1,13 @@
+import Button from "./components/Button";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <div>
-        <p>Hello World</p>
-      </div>
+      <Header />
+      <Button>Prueba</Button>
+      <Footer />
     </>
   );
 }
