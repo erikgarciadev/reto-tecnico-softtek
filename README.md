@@ -7,17 +7,17 @@
       Se utiliza para realizar uso del procesador sass, que nos ayudará con el nesting y uso de mixins
 
 ## Tareas realizadas
-   - [] Realizar componentes
+   - [X] Realizar componentes
       - [X] Header
       - [X] Footer
       - [X] Button 
       - [X] Badge
       - [X] Input
       - [X] Checkbox
-      - [] Stepper
-      - [] OptionCard
-      - [] PlanCard
-      - [] ButtonBack
+      - [X] Stepper
+      - [X] OptionCard
+      - [X] PlanCard
+      - [X] ButtonBack
    - [] Diseñar las vistas
       - [] Vista Datos
       - [] Vista Planes y Coberturas

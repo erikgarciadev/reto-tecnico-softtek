@@ -1,0 +1,39 @@
+@import "../../_mixins.scss";
+
+.button-back {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--neutral-500);
+    cursor: pointer;
+
+    @include breakpoint-small {
+        color: var(--blue-berry);
+    }
+
+    &__circle {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 2px solid var(--neutral-500);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint-small {
+            border: 2px solid var(--blue-berry);
+        }
+    }
+
+    &__text {
+        display: none;
+
+        @include breakpoint-small {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.4px;
+        }
+    }
+}

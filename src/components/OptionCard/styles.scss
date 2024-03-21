@@ -1,0 +1,72 @@
+@import "../../_mixins.scss";
+
+.option-card {
+    border-radius: 24px;
+    box-shadow: 0px 1px 32px 0px #aeacf359;
+    width: 100%;
+    cursor: pointer;
+    padding: 16px 24px 40px 24px;
+    color: var(--neutral-700);
+    background-color: #fff;
+
+    &--selected {
+        border: 3px solid var(--grey-100);
+    }
+
+    @include breakpoint-small {
+        width: 256px;
+        height: 212px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: flex-end;
+
+        &__circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--neutral-500);
+
+            &--selected {
+                background-color: var(--success);
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        &__content {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+
+            h2 {
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            @include breakpoint-small {
+                flex-direction: column;
+                align-items: start;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+
+        &__subTitle {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
