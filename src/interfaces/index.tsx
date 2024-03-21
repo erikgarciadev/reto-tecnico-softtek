@@ -17,3 +17,13 @@ export interface Plan {
   age: number;
   description: string[];
 }
+
+export interface User {
+  name: string;
+  lastName: string;
+  birthDay: string;
+  phoneNumber?: string;
+  dni?: string;
+  acceptPrivacity?: boolean;
+  acceptComunication?: boolean;
+}

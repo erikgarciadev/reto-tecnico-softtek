@@ -10,6 +10,11 @@
 
       Se utiliza para realizar el desplazamiento entre páginas
 
+- @reduxjs/toolkit
+- react-redux
+
+      Se utiliza para realizar la gestión del estado global en la aplicación
+
 ## Tareas realizadas
 
 - [x] Realizar componentes
