@@ -1,13 +1,9 @@
-import Button from "./components/Button";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import ApplicationRoutes from "./routes";
 
 function App() {
   return (
     <>
-      <Header />
-      <Button>Prueba</Button>
-      <Footer />
+      <ApplicationRoutes />
     </>
   );
 }

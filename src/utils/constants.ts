@@ -11,3 +11,9 @@ export const TYPES_OPTIONS = Object.freeze({
   FOR_ME: "for_me",
   FOR_SOMEONE: "for_someone",
 });
+
+export const PATHS = Object.freeze({
+  HOME: "/",
+  PLANS: "/plans",
+  SUMMARY: "/summary",
+});
