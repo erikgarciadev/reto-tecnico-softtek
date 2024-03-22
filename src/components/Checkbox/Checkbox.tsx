@@ -1,4 +1,4 @@
-import React from "react";
+import { forwardRef } from "react";
 import "./styles.scss";
 
 interface Props {
@@ -6,7 +6,7 @@ interface Props {
   onChange?: (e: any) => void;
 }
 
-const CheckBox = React.forwardRef<HTMLInputElement, Props>(
+const CheckBox = forwardRef<HTMLInputElement, Props>(
   ({ checked, onChange, ...props }, ref) => {
     return (
       <input

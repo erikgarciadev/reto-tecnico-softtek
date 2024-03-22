@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, forwardRef } from "react";
 import "./styles.scss";
 import { classNames } from "../../utils/util";
 
@@ -8,7 +8,7 @@ interface Props {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input: FC<Props> = React.forwardRef<HTMLInputElement, Props>(
+const Input: FC<Props> = forwardRef<HTMLInputElement, Props>(
   ({ label, onChange, border = true, ...props }, ref) => {
     return (
       <div
