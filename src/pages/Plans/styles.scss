@@ -1,0 +1,104 @@
+@import "../../_mixins.scss";
+
+.container-plans {
+    padding: 0 1em;
+
+    @include breakpoint-small {
+        padding: 3em 4.5em;
+    }
+
+    &__instructions {
+        padding: 3em 0 2em 0;
+
+        @include breakpoint-small {
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--neutral-700);
+            line-height: 36px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            font-size: 28px;
+
+            @include breakpoint-small {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.1px;
+            color: var(--neutral-700);
+        }
+    }
+
+    &__options {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        flex-direction: column;
+
+        @include breakpoint-small {
+            flex-direction: row;
+        }
+    }
+
+    &__list-plans {
+        padding: 3em 0 2em 0;
+    }
+}
+
+.container-button-back {
+    display: none;
+    @include breakpoint-small {
+        display: block;
+    }
+}
+
+.swiper-paginations {
+    width: auto !important;
+    color: var(--neutral-700);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.swiper-slide {
+    height: auto !important;
+}
+
+.container-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    padding: 1.5em 0 0 0;
+
+    @include breakpoint-small {
+        display: none;
+    }
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    color: var(--neutral-500);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--neutral-500);
+    border-radius: 50%;
+
+    &--active {
+        pointer-events: initial;
+        color: var(--blue-berry);
+        border-color: var(--blue-berry);
+        cursor: pointer;
+    }
+}

@@ -2,8 +2,12 @@
 
 ## Librerias usadas
 
+- [swiper](https://www.npmjs.com/package/swiper)
+
+      Se utiliza para realizar un slider para los planes
+
 - [react-hook-form](https://www.npmjs.com/package/react-hook-form)
-      
+
       Se utiliza para realizar el manejo del formulario y su validación
 
 - [sass](https://www.npmjs.com/package/sass)
@@ -33,8 +37,8 @@
   - [x] PlanCard
   - [x] ButtonBack
 - [] Diseñar las vistas
-  - [X] Vista Datos
-  - [] Vista Planes y Coberturas
+  - [x] Vista Datos
+  - [X] Vista Planes y Coberturas
   - [] Vista Resumen
 
 ## Levantamiento del proyecto

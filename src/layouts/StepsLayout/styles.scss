@@ -1,0 +1,49 @@
+@import "../../_mixins.scss";
+
+.container-children {
+    background-color: var(--neutral-100);
+    min-height: calc(100vh - 112px);
+
+    @include breakpoint-small {
+        min-height: calc(100vh - 120px);
+    }
+}
+
+.container-steps {
+    background-color: var(--neutral-100);
+    @include breakpoint-small {
+        background-color: var(--neutral-200);
+    }
+}
+
+.container-stepper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid var(--neutral-400);
+
+    @include breakpoint-small {
+        border-bottom: none;
+    }
+
+    &__normal {
+        display: none;
+
+        @include breakpoint-small {
+            display: block;
+        }
+    }
+
+    &__mobile {
+        width: 100%;
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        @include breakpoint-small {
+            display: none;
+        }
+    }
+}

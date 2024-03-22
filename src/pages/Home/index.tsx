@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import FormInformation from "./FormInformation";
 import "./styles.scss";
 import { getDataUser } from "../../slices/homeSlice";
-import { useAppDispatch } from "../../app/hook";
+import { useAppDispatch } from "../../app/hooks";
 
 const Home = () => {
   const dispatch = useAppDispatch();

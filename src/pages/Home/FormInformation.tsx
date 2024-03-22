@@ -1,4 +1,3 @@
-
 import Badge from "../../components/Badge";
 import Button from "../../components/Button";
 import Checkbox from "../../components/Checkbox";
@@ -10,7 +9,7 @@ import { useDispatch } from "react-redux";
 import { updateUser } from "../../slices/homeSlice";
 import { useNavigate } from "react-router-dom";
 import { PATHS } from "../../utils/constants";
-import { useAppSelector } from "../../app/hook";
+import { useAppSelector } from "../../app/hooks";
 
 interface Inputs {
   dni: string;
