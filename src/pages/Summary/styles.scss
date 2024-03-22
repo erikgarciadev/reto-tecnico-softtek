@@ -1,0 +1,83 @@
+@import "../../_mixins.scss";
+
+.container-summary {
+    padding: 0 1em;
+
+    @include breakpoint-small {
+        padding: 3em 6em;
+    }
+}
+
+.title-summary {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    text-align: center;
+    padding: 0.5em 0;
+
+    @include breakpoint-small {
+        padding: 1em 0;
+        text-align: start;
+    }
+}
+
+.container-button-back {
+    display: none;
+    @include breakpoint-small {
+        display: block;
+    }
+}
+
+.summary-card {
+    background-color: #fff;
+    box-shadow: 0px 1px 24px 0px #aeacf340;
+    border-radius: 24px;
+    padding: 24px 32px;
+
+    &__user-information {
+        border-bottom: 1px solid var(--neutral-400);
+
+        span {
+            font-weight: 900;
+            font-size: 10px;
+            line-height: 16px;
+            letter-spacing: 0.8px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 0.8em;
+            padding: 0.8em 0;
+
+            p {
+                color: var(--neutral-700);
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+
+    &__responsible_payment {
+        padding: 1em 0;
+    }
+}
+
+.title {
+    color: var(--neutral-700);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: var(--neutral-700);
+}

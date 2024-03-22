@@ -36,10 +36,10 @@
   - [x] OptionCard
   - [x] PlanCard
   - [x] ButtonBack
-- [] Diseñar las vistas
+- [X] Diseñar las vistas
   - [x] Vista Datos
   - [X] Vista Planes y Coberturas
-  - [] Vista Resumen
+  - [X] Vista Resumen
 
 ## Levantamiento del proyecto
 
