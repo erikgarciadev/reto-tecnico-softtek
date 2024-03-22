@@ -57,3 +57,11 @@ npm run dev
 
 - En su consola le mostrar el url para poder ver el proyecto levantado, por defecto sería:
   http://localhost:5173/
+
+## Testing
+
+- Ejecutar en su consola el siguiente comando:
+
+```
+npm run test
+```
